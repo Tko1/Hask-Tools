@@ -14,14 +14,17 @@
 ;;;
 (defn id [x] x)
 ;;;
-(defn flip [f]
-  (fn
+(defn flip
+  ([f] ;;((flip str) "END" "Begin") => BeginEND
+   (fn
     ([] (f))
-    ([a1] (f a1))
+    ([a1] (f a1))g
     ([a1 a2] (f a2 a1))
-    ([a1 a2 & as] (apply f (concat `(~a2 ~a1) as)))))
+     ([a1 a2 & as] (apply f (concat `(~a2 ~a1) as)))))
+  ([f & args] (apply (flip f) args))) ;; (flip str "END" "Begin") => BeginEnd
 (assert (= ((flip str) "END" "Begin") "BeginEND"))
 (assert (= ((flip str) "END" "Begin" "EndEnd") "BeginENDEndEnd"))
+(assert (= (flip str "END" "Begin") "BeginEND"))
 ;;;
 (comment
 (defn full-flip [f]
