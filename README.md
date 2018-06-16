@@ -1,17 +1,30 @@
 # hask-tools
 
-This library is my attempt to play with and implement various Haskell features. The goal for now is to have monads, monad transformers,  adt, some form of static type checking,  some macros for writing code with haskell syntax , curried functions,  and lens / prisms.  I am late uploading this to github, and have not looked at it for a little while, and as such I do not have a tally of what I have implemented so far, but I believe most of the things listed have been implemented already in one form or another.
+## Description 
+This library is a set of utilities inspired by various Haskell features. These utilities include:
+##### hask-tools.monad
+  ##### test  indent
+  ##### test2 indent
+##### hask-tools.adt
+An implementation of abstract data types.
+##### hask-tools.functor
+A protocol for the Functor interface
+##### hask-tools.hsynt
+Functions for writing code with a more Haskellian syntax / style (in progress).
+##### hask-tools.lens
+An implementation of lens, the "functional reference".
+##### hask-tools.monoid
+A protocol for the Monoid interface
+##### hask-tools.typed
+Originally meant as series of macros to created a statically typed Clojure,  this has been replaced by some utility functions in hask-tools.util that use clojure.spec to validate data.
 
-TODO:
-1. Clean up code
-2. List library goals
-3. List what has already been done
-4. Rewrite Readme to reflect all of the above.
-5. Separate any code that should be a separate library.
-6. Write usage for current tools, write tutorials for current tools.
+## Table of Contents
+
+## Installation
+
 ## Usage
 
-FIXME
+
 
 ## License
 
