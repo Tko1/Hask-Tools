@@ -3,8 +3,7 @@
 ## Description 
 This library is a set of utilities inspired by various Haskell features. These utilities include:
 ##### hask-tools.monad
-  ##### test  indent
-  ##### test2 indent
+  
 ##### hask-tools.adt
 An implementation of abstract data types.
 ##### hask-tools.functor
