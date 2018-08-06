@@ -5,7 +5,7 @@ This library is a set of utilities inspired by various Haskell features. These u
 ##### hask-tools.monad
   
 ##### hask-tools.adt
-An implementation of abstract data types.
+An implementation of algebraic data types.
 ##### hask-tools.functor
 A protocol for the Functor interface
 ##### hask-tools.hsynt
