@@ -1,7 +1,5 @@
 (ns hask-tools.debug)
-  ;;(:require [hask-tools.util :refer [full-flip]]))
 
-;;(require '[hask-tools.util :refer [full-flip]])
 ;; Copied from util so that hask-tools.debug has no
 ;; dependencies
 ;;;;;;;;;;;;;;;;;;;; Util ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

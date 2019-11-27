@@ -1,10 +1,9 @@
-(ns hask-tools.monad.get)
-
-(require '[hask-tools.monad.core :refer :all])
-(require '[hask-tools.adt :refer :all])
-(require '[hask-tools.monad.maybe :refer :all])
-(require '[hask-tools.lens :refer :all])
-(require '[hask-tools.util :refer :all])
+(ns hask-tools.monad.get
+  (:require [hask-tools.monad.core :refer :all]
+            [hask-tools.adt :refer :all]
+            [hask-tools.monad.maybe :refer :all]
+            [hask-tools.lens :refer :all]
+            [hask-tools.util :refer :all]))
 (data Decoder =
       Fail bytestring error-text
       | Partial continue

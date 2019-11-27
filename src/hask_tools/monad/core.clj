@@ -1,7 +1,7 @@
-(ns hask-tools.monad.core)
+(ns hask-tools.monad.core
+  (:require [hask-tools.debug :refer :all]
+            [hask-tools.util :refer :all]))
 
-(require '[hask-tools.debug :refer :all])
-(require '[hask-tools.util :refer :all])
 (defprotocol Monad
   (>>= [m f]
     ">>= :: m a -> (a -> m b) -> m b")

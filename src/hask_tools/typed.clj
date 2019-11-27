@@ -1,28 +1,8 @@
-(ns hask-tools.typed)
-
-(require '[hask-tools.util])
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;
-;; TODO Remove? Pretty sure I replaced this with a spec version
-;; of type checking
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;(require '[hask-tools.debug])
-
-;;(defn type? [a b] (= (type b) a))
-;; Moved to util
-;;(defn ->assert [t x] (assert (t x)) x)
+(ns hask-tools.typed
+  (:require [hask-tools.util])
 
 (def List clojure.lang.PersistentList)
 (def Vector clojure.lang.PersistentVector)
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;
-;; Creates ..statically typed args
-;;
-;; TODO make one that takes (pred arg) , from which you can build
-;;      type predicates?
-;; TODO typed-let
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (defn is-pairs-or-pred? [ps]
   (or

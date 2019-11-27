@@ -1,7 +1,6 @@
-(ns hask-tools.hsynt)
-
-(require '[hask-tools.debug :refer :all])
-(require '[hask-tools.util :refer :all])
+(ns hask-tools.hsynt
+  (:require [hask-tools.debug :refer :all]
+            [hask-tools.util :refer :all]))
 ;; Converts haskell  a b $ c d -> (a b (c d))
 (defmacro heval$ [& args]
    (dlet

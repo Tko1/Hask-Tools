@@ -1,14 +1,13 @@
-(ns hask-tools.monad.parser)
-
-(require '[hask-tools.monad.core :refer :all])
-(require '[hask-tools.adt :refer :all])
-(require '[hask-tools.lens :refer :all])
-(require '[hask-tools.debug :refer :all])
-(require '[clojure.spec.alpha :as s])
-(require '[clojure.spec.gen.alpha :as gen])
-(require '[hask-tools.util :refer :all])
-(require '[hask-tools.functor :refer :all])
-(require '[hask-tools.monoid :refer :all])
+(ns hask-tools.monad.parser
+  (:require  [hask-tools.monad.core :refer :all]
+             [hask-tools.adt :refer :all]
+             [hask-tools.lens :refer :all]
+             [hask-tools.debug :refer :all]
+             [clojure.spec.alpha :as s]
+             [clojure.spec.gen.alpha :as gen]
+             [hask-tools.util :refer :all]
+             [hask-tools.functor :refer :all]
+             [hask-tools.monoid :refer :all]))
 (s/def ::parsable #(or (coll? %) (string? %)))
 
 (fn-spec-test ::parsable -> (s/coll-of (s/tuple ::all string?)))

@@ -1,8 +1,7 @@
-(ns hask-tools.adt)
-
-(require '[hask-tools.debug :refer :all])
-(require '[hask-tools.util :refer :all])
-(require '[hask-tools.hsynt :refer :all])
+(ns hask-tools.adt
+  (:require [hask-tools.debug :refer :all]
+            [hask-tools.util :refer :all]
+            [hask-tools.hsynt :refer :all]))
 
 (defmacro defadt [-name & variants]
   (dlet [main-constr-name (symbol (str -name "."))

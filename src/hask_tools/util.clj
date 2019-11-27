@@ -1,7 +1,6 @@
-(ns hask-tools.util)
-
-(require '[hask-tools.debug :refer :all])
-(require '[clojure.spec.alpha :as s])
+(ns hask-tools.util
+  (:require [hask-tools.debug :refer :all]
+            [clojure.spec.alpha :as s]))
 
 (defn arities [v]
   (->> v meta :arglists (map count)))

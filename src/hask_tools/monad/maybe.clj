@@ -1,8 +1,7 @@
-(ns hask-tools.monad.maybe)
-
-(require '[hask-tools.monad.core :refer :all])
-(require '[hask-tools.adt :refer :all])
-(require '[hask-tools.lens :refer :all])
+(ns hask-tools.monad.maybe
+  (:require [hask-tools.monad.core :refer :all]
+            [hask-tools.adt :refer :all]
+            [hask-tools.lens :refer :all]))           
 (data Maybe = Just x | Nothing)
 
 (extend-protocol Monad

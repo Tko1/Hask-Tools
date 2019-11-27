@@ -1,7 +1,6 @@
-(ns hask-tools.monad.identity)
-
-(require '[hask-tools.functor :refer :all])
-(require '[hask-tools.monad.core :refer :all])
+(ns hask-tools.monad.identity
+  (:require [hask-tools.functor :refer :all]
+            [hask-tools.monad.core :refer :all]))
 (defrecord Identity [runIdentity])
 
 (extend-type Identity

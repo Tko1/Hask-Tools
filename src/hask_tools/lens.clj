@@ -1,13 +1,12 @@
-(ns hask-tools.lens)
-;;I am sure there is a way to fold these into one list?
-(require '[clojure.string :as str])
-(require '[hask-tools.debug :refer :all])
-(require '[hask-tools.util :refer :all])
-(require '[hask-tools.functor :refer :all])
-(require '[hask-tools.monad.core :refer :all])
-(require '[hask-tools.monad.const :refer :all])
-(require '[hask-tools.monad.identity :refer :all])
-(require '[hask-tools.adt :refer :all])
+(ns hask-tools.lens
+  (:require [clojure.string :as str]
+            [hask-tools.debug :refer :all]
+            [hask-tools.util :refer :all]
+            [hask-tools.functor :refer :all]
+            [hask-tools.monad.core :refer :all]
+            [hask-tools.monad.const :refer :all]
+            [hask-tools.monad.identity :refer :all]
+            [hask-tools.adt :refer :all]))
 
 ;;
 ;; Lens
