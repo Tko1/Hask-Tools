@@ -17,6 +17,9 @@ A protocol for the Monoid interface
 ##### hask-tools.typed
 Originally meant as series of macros to created a statically typed Clojure,  this has been replaced by some utility functions in hask-tools.util that use clojure.spec to validate data.
 
+##### hask-tools.monad.parser
+A full on monadic parser suite.  However, derived half from scratch to build intuition, so may not be 1:1 with normal monadic parsers 
+
 ## Table of Contents
 
 ## Installation
