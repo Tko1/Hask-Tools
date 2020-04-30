@@ -1,5 +1,6 @@
 # hask-tools
 
+Edit: This project is old,  and none of it is idiomatic -- this was my 'familiarizer' project for Clojure, the process I go through when familiarizing myself with a language by churning out something like this, trying to just use as much of the core language as possible, after which I'll try to make a 'second pass' through the language, looking up idioms at every turn.  Try not to judge me ;) 
 ## Description 
 This library is a set of utilities inspired by various Haskell features. These utilities include:
 ##### hask-tools.monad
